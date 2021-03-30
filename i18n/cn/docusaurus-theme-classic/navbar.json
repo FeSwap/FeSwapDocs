@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "FeSwap去中心化交易所 ",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "项目文档",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.SWAP": {
+    "message": "代币交易",
+    "description": "Navbar item with label SWAP"
+  },
+  "item.label.BORROW": {
+    "message": "抵押借贷",
+    "description": "Navbar item with label BORROW"
+  },
+  "item.label.NFT": {
+    "message": "交易对NFT",
+    "description": "Navbar item with label NFT"
+  },
+  "item.label.Cookbooks 📚": {
+    "message": "技术资料 📚",
+    "description": "Navbar item with label Cookbooks 📚"
+  },
+  "item.label.Community": {
+    "message": "社区治理",
+    "description": "Navbar item with label Community"
+  }
+}

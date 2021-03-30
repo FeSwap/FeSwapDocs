@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "下个版本",
+    "description": "The label for version current"
+  },
+  "sidebar.someSidebar.category.Docusaurus": {
+    "message": "Docusaurus",
+    "description": "The label for category Docusaurus in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Features": {
+    "message": "特性",
+    "description": "The label for category Features in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.FeSwap": {
+    "message": "FeSwap 去中心化交易所",
+    "description": "The label for category FeSwap in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.FreeSwap Exchange Protocol": {
+    "message": "FreeSwap 交易协议",
+    "description": "The label for category FreeSwap Exchange Protocol in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.FeSwap Governance": {
+    "message": "FeSwap 社区治理",
+    "description": "The label for category FeSwap Governance in sidebar someSidebar"
+  }
+}

@@ -1,0 +1,88 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #00A4B8;
+  --ifm-color-primary-dark: #00a2b6;
+  --ifm-color-primary-darker: #0099ac; 
+  --ifm-color-primary-darkest: #007e8d;
+  --ifm-color-primary-light: #00c6de;
+  --ifm-color-primary-lighter: #00cfe8;
+  --ifm-color-primary-lightest: #08e4ff;
+  --ifm-code-font-size: 100%;
+  --ifm-code-background: #faeae5;
+  --ifm-menu-color-active: #00a2b6;
+  --ifm-footer-background-color: #f3f3f3;
+  --ifm-code-border-radius: 0.15rem;
+  --ifm-background-surface-color: #f3f3f3;
+  --ifm-menu-color-background-active: #faeae5;
+  --ifm-font-family-base: 'Open Sans', system-ui, -apple-system,
+      BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', 'Fira Mono', SFMono-Regular, Menlo,
+      Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+blockquote {
+  font-size: 100%;
+  color: #007e8d;
+  background-color: #faeae5;
+  border-radius: 0.25rem;
+  border-left: none;
+}
+
+html[data-theme='dark'] blockquote {
+  background-color: #242526;
+  color: #e38163;
+}
+
+code {
+  color: #007e8d;
+  font-size: 100%;
+}
+
+html[data-theme='dark'] code {
+  color: #e38163;
+  background-color: #242526;
+}
+
+blockquote code {
+  background-color: #e38163;
+}
+
+[class^='codeBlockLines'] {
+  background-color: #242526 !important;
+}
+
+.footer {
+  background-color: #f3f3f3;
+  color: #e38163 
+}
+
+html[data-theme='dark'] .footer {
+  background-color: #242526;
+}
+
+.footer__title {
+	color: #00A4B8; 
+  margin-bottom: 0.5rem;
+}
+
+.footer__link-item {
+  color: #00A4B8; 
+}
+
+.title {
+  color: #00A4B8; 
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}

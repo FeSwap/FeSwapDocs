@@ -16,6 +16,11 @@ yarn start
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
+```console
+npm run start -- --locale cn
+```
+This command starts specified locale development server.
+
 ## Build
 
 ```console
@@ -23,6 +28,11 @@ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+```console
+npm run build -- --locale cn
+```
+This command generates specified locale static content.
 
 ## Deployment
 

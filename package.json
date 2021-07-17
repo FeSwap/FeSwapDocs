@@ -1,6 +1,6 @@
 {
-  "name": "fe-swap-docs",
-  "version": "0.0.0",
+  "name": "feswap-docs",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

@@ -12,7 +12,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
   organizationName: 'Feswap', // Usually your GitHub org/user name.
-  projectName: 'Feswap Docs', // Usually your repo name.
+  projectName: 'FeSwapDocs',  // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'cn'],

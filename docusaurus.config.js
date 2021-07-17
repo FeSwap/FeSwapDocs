@@ -6,7 +6,7 @@ const katex = require("rehype-katex");
 module.exports = {
   title: 'FeSwap',
   tagline: 'The First Free Decentralized AMM Exchange in the World 🤲💰️💰️🤲',
-  url: 'https://www.feswap.io',
+  url: 'https://docs.feswap.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

@@ -1,6 +1,9 @@
 name: Website Deploy
 
 on:
+  pull_request:
+    branches:
+      -main
   push:
     branches:
       - main
@@ -38,7 +41,7 @@ jobs:
       - name: Release to GitHub Pages
         env:
           USE_SSH: true
-          GIT_USER: ldru
+          GIT_USER: git
         run: |
           git config --global user.email "ldru@163.com"
           git config --global user.name "ldru"

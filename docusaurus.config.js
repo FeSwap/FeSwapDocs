@@ -6,12 +6,12 @@ const katex = require("rehype-katex");
 module.exports = {
   title: 'FeSwap',
   tagline: 'The First Free Decentralized AMM Exchange in the World 🤲💰️💰️🤲',
-  url: 'https://docs.feswap.io',
+  url: 'https://wwww.feswap.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
-  organizationName: 'Feswap', // Usually your GitHub org/user name.
+  organizationName: 'FeSwap', // Usually your GitHub org/user name.
   projectName: 'FeSwapDocs',  // Usually your repo name.
   trailingSlash: true,
   i18n: {

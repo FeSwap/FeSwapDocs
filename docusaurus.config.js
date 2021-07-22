@@ -13,7 +13,6 @@ module.exports = {
   favicon: 'img/Fesw.png',
   organizationName: 'FeSwap', // Usually your GitHub org/user name.
   projectName: 'FeSwapDocs',  // Usually your repo name.
-  trailingSlash: true,
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'cn'],

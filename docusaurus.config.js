@@ -10,7 +10,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.png',
+  favicon: 'img/Fesw.png',
   organizationName: 'FeSwap', // Usually your GitHub org/user name.
   projectName: 'FeSwapDocs',  // Usually your repo name.
   trailingSlash: true,
@@ -40,7 +40,7 @@ module.exports = {
       title: 'FeSwap Exchange ',
       logo: {
         alt: 'FeSwap Site Logo',
-        src: 'img/favicon.png',
+        src: 'img/Fesw.png',
       },
       items: [
         {to: 'swap',    label: 'SWAP',    position: 'left'},

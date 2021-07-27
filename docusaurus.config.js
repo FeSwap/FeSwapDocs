@@ -45,6 +45,7 @@ module.exports = {
         {to: 'swap',    label: 'SWAP',    position: 'left'},
         {to: 'borrow',  label: 'BORROW',  position: 'left'},
         {to: 'NFT',     label: 'NFT',     position: 'left'},
+        {label: 'App',  href: 'https://app.feswap.io', position: 'right'},
         {
           to: 'docs/',
           activeBasePath: '/',

@@ -5,7 +5,7 @@ const katex = require("rehype-katex");
 
 module.exports = {
   title: 'FeSwap',
-  tagline: 'The First Free Decentralized AMM Exchange in the World 🤲💰️💰️🤲',
+  tagline: '🤲💰️ Decentralized Crypto AMM Exchange with Zero Transaction Fee 💰️🤲',
   url: 'https://wwww.feswap.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -27,33 +27,45 @@ module.exports = {
   },
   stylesheets: [
     {
-      href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",
-      type: "text/css",
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css',
       integrity:
-        "sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq",
-      crossorigin: "anonymous",
+        'sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc',
+      crossorigin: 'anonymous',
     },
   ],
   themeConfig: {
     navbar: {
-      title: 'FeSwap Exchange ',
+      title: 'FeSwap Exchange',
       logo: {
         alt: 'FeSwap Site Logo',
         src: 'img/Fesw.png',
       },
       items: [
-        {to: 'swap',    label: 'SWAP',    position: 'left'},
-        {to: 'borrow',  label: 'BORROW',  position: 'left'},
-        {to: 'NFT',     label: 'NFT',     position: 'left'},
-        {label: 'App',  href: 'https://app.feswap.io', position: 'right'},
-        {label: '@ipfs',  href: 'https://ipfs.feswap.io', position: 'right'},
+        {to: 'Swap',        label: 'Swap',        position: 'left'},
+        {to: 'Liquidity',   label: 'Liquidity',   position: 'left'},
+        {to: 'NFT',         label: 'NFT',         position: 'left'},
+        {to: 'Sponsor',     label: 'Sponsor',     position: 'left'},
+
+        {label: 'App',      href: 'https://app.feswap.io', position: 'right'},
+        {label: '@ipfs',    href: 'https://ipfs.feswap.io', position: 'right'},
         {
           to: 'docs/',
           activeBasePath: '/',
-          label: 'Cookbooks 📚',
+          label: 'Docs 📚',
           position: 'right',
         },
-        {to: 'blog', label: 'Community', position: 'right'},
+        {
+          type: 'dropdown',
+          label: 'Community',
+          position: 'right',
+          items: [
+            {to: 'blog', label: 'Blog 💬'},
+            {
+              to: 'download',
+              label: 'Download ⤵',
+            },
+          ],
+        },
         {
           type: 'localeDropdown',
           position: 'right',

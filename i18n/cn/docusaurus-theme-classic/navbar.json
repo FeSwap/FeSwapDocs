@@ -15,13 +15,13 @@
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
   },
-  "item.label.SWAP": {
+  "item.label.Swap": {
     "message": "代币交易",
     "description": "Navbar item with label SWAP"
   },
-  "item.label.BORROW": {
-    "message": "抵押借贷",
-    "description": "Navbar item with label BORROW"
+  "item.label.Liquidity": {
+    "message": "流动性挖矿",
+    "description": "Navbar item with label Liquidity"
   },
   "item.label.NFT": {
     "message": "交易对NFT",

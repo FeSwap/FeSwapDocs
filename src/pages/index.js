@@ -12,62 +12,61 @@ const features = [
     imageUrl: 'img/Art.png',
     description: (
       <>
-        FeSwap NFT represents the owner of the specific swap pair. It can keep making profits for its owner,
-        and can also be resaled openly.  
+        FeSwap NFT testifies the owner of specific swap pair. Hodling FeSwap NFT makes profits for its owner.
+        It can also be put up for sale publicly.  
       </>
     ),
     Url: 'NFT',
-    link: 'Get FeSwap NFT'
+    link: 'How To Get FeSwap NFT'
   },
   {
     title: 'FeSwap Exchange',
     imageUrl: 'img/Coin.png',
     description: (
       <>
-        FeSwap Exchange supports swapping ERC20 tokens purely with no exchange fee. 
-        Surfing the Defi wave, enjoying the crypto wealth together with Feswap.
+        FeSwap Exchange supports swapping ERC20 tokens completely with no exchange fee. 
+        Surfing the Defi, making the crypto wealth together with Feswap.
       </>
     ),
     Url: 'swap',
-    link: 'Exchange Tokens'
+    link: 'How to Exchange Tokens'
   },
   {
-    title: 'Borrowing on Liquidity',
-    imageUrl: 'img/Loan.png',
+    title: 'Providing Liquidity',
+    imageUrl: 'img/Tidal.png',
     description: (
       <>
-        Mortage on FeSwap liquidty token, borrow in stable coins to invest on your favorite tokens and add more value to your crpytocurreny. 
-      </>
+        Providing Liquidity to FeSwap can make competitive automated market maker profit from the tidal crypto market ups and downs.</>
     ),
-    Url: 'borrow',
-    link: 'Borrow Coins'
+    Url: 'Liquidity',
+    link: 'How to Provide Liquidity'
   },
   {
-    title: 'How to be Free',
+    title: 'How could be Free',
     imageUrl: 'img/Protocol.png',
     description: (
       <>
-        Two one-way swap sub-pools are created for one token pair. Internal arbitrage are conducted
-         to smooth price deviation at preset threshold.
+        Two one-way swap sub-pools are created for each token pair. Internal arbitrage are triggered
+         to relieve price deviation at preset threshold.
       </>
     ),
     Url: 'docs/FreeSwap/abstract',
-    link: 'FreeSwap Protocol'
+    link: 'FeSwap Protocol'
   },
   {
     title: 'FeSwap Community',
     imageUrl: 'img/Community.png',
     description: (
       <>
-        FESW as the FeSwap govenance token are freely distributed to NFT owners, liquidity providers, 
-        swappers, developers, community participators.  
+        FESW, FeSwap govenance tokens, are distributed to NFT owners, liquidity providers, 
+        exchange users, developers, community members freely.  
       </>
     ),
     Url: 'docs/FeSwap/introduction',
     link: 'FeSwap Governance'
   },
   {
-    title: 'FeSwap Milstone',
+    title: 'FeSwap Technicals',
     imageUrl: 'img/Build.png',
     description: (
       <>
@@ -90,7 +89,7 @@ function Feature({imageUrl, title, description, Url, link}) {
         </div>
       )}
       <h3 align="left">{title}</h3>
-      <p>{description}</p>
+      <p  >{description}</p>
       <div align="center">
         <Link className={styles.buttons}
           to={useBaseUrl(`${Url}`)}>
@@ -106,7 +105,7 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`First Free Decentralized AMM Exchange`}
+      title={`Decentralized Crypto Exchange of Zero Fee`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -117,7 +116,7 @@ export default function Home() {
       <main>
         {features && features.length > 0 && (
           <section className={styles.section}>
-            <div className="container">
+            <div className="container" >
               <div className="row">
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />

@@ -48,7 +48,7 @@
     "description": "The label of footer link with label=FeSwap Governance linking to docs/Feswap/introduction"
   },
   "link.item.label.FreeSwap Protocol": {
-    "message": "FreeSwap 免费交易协议",
+    "message": "FeSwap 免费交易协议",
     "description": "The label of footer link with label=FreeSwap Protocol linking to docs/FreeSwap/abstract"
   },
   "link.item.label.Telegram": {

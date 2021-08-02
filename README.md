@@ -17,7 +17,8 @@ yarn start
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
 ```console
-npm run start -- --locale cn
+npm run start --locale cn
+yarn start --locale cn
 ```
 This command starts specified locale development server.
 

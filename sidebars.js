@@ -1,6 +1,22 @@
 module.exports = {
-  someSidebar: [
+  FeSwapSidebar: [
     'overview',
+    {
+      type: 'category',
+      label: 'FeSwap Contracts',
+      collapsed: false,
+      items: [
+        'Contracts/fesw',
+        'Contracts/factory',
+        'Contracts/router',
+        'Contracts/nft',
+        'Contracts/sponsor',
+        'Contracts/StakingTwinRewardsFactory',
+        'Contracts/StakingTwinRewards',
+        'Contracts/Timelock',
+        'Contracts/FeswGovernor',
+      ],
+    },
     {
       type: 'category',
       label: 'FeSwap Governance',

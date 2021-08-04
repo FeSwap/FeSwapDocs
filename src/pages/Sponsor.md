@@ -37,6 +37,7 @@ The total duration receiving sponsor is 30 days, starting from the time specifie
 _________________
 
 ## <span className="title"> Guidance to Sponsor FeSwap </span>
+*** In following guidance, assuming you are using MetaMask wallet. *
 
 import GuidanceWindow from '@site/src/components/GuidanceWindow';
 import { RefreshCcw, PlusCircle, Activity, Lock, User, Coffee, Flag, MinusCircle, Clock, Volume2, Eye } from 'react-feather'
@@ -49,11 +50,10 @@ import { RefreshCcw, PlusCircle, Activity, Lock, User, Coffee, Flag, MinusCircle
 
 :::info Info
 
-Please read the remindings in detail.
-
-If you do not understand the remindings very well, and not very sure that you want to sponsor FeSwap, 
+- Please read the remindings in detail.
+- If you do not understand the remindings very well, and not very sure that you want to sponsor FeSwap, 
 please select <strong style={{color:'Brown'}}>"NOT Sponsor"</strong>, which is the default selection.
-
+- This windows is displayed each time you enter <strong>"Sponsor"</strong> page. 
 ::: 
 
   </span>  
@@ -77,18 +77,28 @@ _____________________
   </span>  
 
 :::tip Tips
-+ Input the amount of FESW you desire to get, the corresponding ETH amount will be given.
++ If input the amount of FESW you desire to get, the corresponding ETH amount could be given.
 + Click <RefreshCcw size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}}/> 
   to toggle the sponsor giveaway rate.
 :::
 </GuidanceWindow>
 
-______________________________
+_____________________
 
 <GuidanceWindow imageUrl="img/Guidance/Sponsor/Sponsor03.png">
+
+:::caution Sponsor
++ If your sponsor amount is more than 5ETH, special reminding window will be displayed as the left.
+:::
+
+</GuidanceWindow>
+
+______________________________
+
+<GuidanceWindow imageUrl="img/Guidance/Sponsor/Sponsor04.png">
   <span>
     <strong>Step 6:</strong> In the confirm window, the sponsored ETH amount and the FESW giveway amount are prompted. Check these information, and then click <strong>"Confirm Sponsor"</strong> to connect wallet and sign the transaction.<br/><br/>
-    <strong>Step 7:</strong> In Metamask, check the transaction content, sign and broadcast the tranaction.<br/><br/>
+    <strong>Step 7:</strong> In Metamask wallet, check the transaction content, sign and broadcast the tranaction.<br/><br/>
     <strong>Step 8:</strong> Waiting the transaction to be confirmed in the ETH network.<br/><br/>
     <strong>Step 9:</strong> Check your sponsor transaction and the received FESW amount within ETH network explorer.<br/>
   </span>  

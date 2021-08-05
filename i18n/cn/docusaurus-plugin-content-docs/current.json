@@ -22,5 +22,17 @@
   "sidebar.someSidebar.category.FeSwap Governance": {
     "message": "FeSwap 社区治理",
     "description": "The label for category FeSwap Governance in sidebar someSidebar"
+  },
+  "sidebar.FeSwapSidebar.category.FeSwap Contracts": {
+    "message": "FeSwap Contracts",
+    "description": "The label for category FeSwap Contracts in sidebar FeSwapSidebar"
+  },
+  "sidebar.FeSwapSidebar.category.FeSwap Governance": {
+    "message": "FeSwap Governance",
+    "description": "The label for category FeSwap Governance in sidebar FeSwapSidebar"
+  },
+  "sidebar.FeSwapSidebar.category.FreeSwap Exchange Protocol": {
+    "message": "FreeSwap Exchange Protocol",
+    "description": "The label for category FreeSwap Exchange Protocol in sidebar FeSwapSidebar"
   }
 }

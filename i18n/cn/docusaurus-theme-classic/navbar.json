@@ -17,10 +17,10 @@
   },
   "item.label.Swap": {
     "message": "代币交易",
-    "description": "Navbar item with label SWAP"
+    "description": "Navbar item with label Swap"
   },
   "item.label.Liquidity": {
-    "message": "流动性挖矿",
+    "message": "提供流动性",
     "description": "Navbar item with label Liquidity"
   },
   "item.label.NFT": {
@@ -34,5 +34,33 @@
   "item.label.Community": {
     "message": "社区治理",
     "description": "Navbar item with label Community"
+  },
+  "item.label.Mining": {
+    "message": "流动性挖矿",
+    "description": "Navbar item with label Mining"
+  },
+  "item.label.Sponsor": {
+    "message": "资助",
+    "description": "Navbar item with label Sponsor"
+  },
+  "item.label.App": {
+    "message": "代币交易App",
+    "description": "Navbar item with label App"
+  },
+  "item.label.@ipfs": {
+    "message": "@ipfs",
+    "description": "Navbar item with label @ipfs"
+  },
+  "item.label.Docs 📚": {
+    "message": "技术文档 📚",
+    "description": "Navbar item with label Docs 📚"
+  },
+  "item.label.Blog 💬": {
+    "message": "博客 💬",
+    "description": "Navbar item with label Blog 💬"
+  },
+  "item.label.Download ⤵": {
+    "message": "下载 ⤵",
+    "description": "Navbar item with label Download ⤵"
   }
 }

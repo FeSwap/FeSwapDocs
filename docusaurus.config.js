@@ -43,7 +43,7 @@ module.exports = {
       items: [
         {to: 'Swap',        label: 'Swap',        position: 'left'},
         {to: 'Liquidity',   label: 'Liquidity',   position: 'left'},
-        {to: 'Mining',      label: 'Mining',   position: 'left'},
+        {to: 'Mining',      label: 'Mining',      position: 'left'},
         {to: 'NFT',         label: 'NFT',         position: 'left'},
         {to: 'Sponsor',     label: 'Sponsor',     position: 'left'},
 

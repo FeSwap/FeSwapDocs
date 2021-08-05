@@ -1,4 +1,5 @@
 ---
+id: sponsor
 title: FeSwap Sponsor
 hide_table_of_contents: false
 ---

@@ -1,4 +1,5 @@
 ---
+id: nft
 title: FeSwap Token Pair NFT
 hide_table_of_contents: false
 ---

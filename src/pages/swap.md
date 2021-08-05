@@ -1,4 +1,5 @@
 ---
+id: swap
 title: FeSwap Exchange
 hide_table_of_contents: false
 ---

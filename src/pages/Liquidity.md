@@ -1,4 +1,5 @@
 ---
+id: liquidity
 title: FeSwap Liquidity
 hide_table_of_contents: false
 ---

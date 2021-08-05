@@ -1,4 +1,5 @@
 ---
+id: mining
 title: FeSwap Mining
 hide_table_of_contents: false
 ---

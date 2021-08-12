@@ -20,11 +20,23 @@ As the NFT owner, the bidding winner could control some transaction paramters of
 
 | ETH NetWork | Token Pair NFT Contract Address |
 |:------: | :--------------: |
-| ETH Mainnet |  Waiting |
+| ETH Mainnet |  [0x0aB276b92a6E6d3EcC8D5888D1b15EffEa223923](https://etherscan.io/address/0x0ab276b92a6e6d3ecc8d5888d1b15effea223923) |
 | ETH Testnet Ropsten | [0x06c2de45973df34dab22ad0b767d2be3eca5d178](https://ropsten.etherscan.io/address/0x06c2de45973df34dab22ad0b767d2be3eca5d178) |
 | ETH Testnet Rinkeby | [0x06c2de45973df34dab22ad0b767d2be3eca5d178](https://rinkeby.etherscan.io/address/0x06c2de45973df34dab22ad0b767d2be3eca5d178)|
 | ETH Testnet Goerli | [0x06c2de45973df34dab22ad0b767d2be3eca5d178](https://goerli.etherscan.io/address/0x06c2de45973df34dab22ad0b767d2be3eca5d178)|
 | ETH Testnet Kovan | [0x06c2de45973df34dab22ad0b767d2be3eca5d178](https://kovan.etherscan.io/address/0x06c2de45973df34dab22ad0b767d2be3eca5d178) |
+
+### <span className="title"> Token Pair NFT Contract Deployments Parameters </span>
+
+- ** constructor (address feswaToken, uint256 priceLowLimit, uint256 saleStartTime )  **
+
+| Parameters | Value  |  information |
+| :--------- | :---------------- | :-------- |
+| feswapToken |  [0x4269eaec0710b874ea55e2AeDc8Fb66223522Bbe](https://etherscan.io/address/0x4269eaec0710b874ea55e2AeDc8Fb66223522Bbe) | This is [FESW token](../Contracts/fesw) address. |
+| priceLowLimit | 0x02c68af0bb140000 | This is the minimum bidding price of FeSwap token pair NFTs. <br/> 0x02c68af0bb140000 euqals 0.2ETH. |
+| saleStartTime | 0x61170968 | This is the timestamp when the NFT bidding is going to start. <br/>0x61170968 means 2021-08-14 08:08:08. |
+
+*** Parameters on ETH Chain *
 
 ### <span className="title"> Token Pair NFT Code </span>
 
@@ -138,7 +150,7 @@ contract FeswaNFT is ERC721, Ownable {
         if(_exists(tokenID )){
             FeswaPair storage pairInfo = ListPools[tokenID]; 
             require(msg.value >= pairInfo.currentPrice.mul(11).div(10), 'FESN: PAY LESS');  // minimum 10% increase
-            require(msg.value >= pairInfo.currentPrice.add(MINIMUM_PRICE_INCREACE), 'FESN: PAY LESS');  // minimum 10% increase
+            require(msg.value >= pairInfo.currentPrice.add(MINIMUM_PRICE_INCREACE), 'FESN: PAY LESS');  // minimum 0.1ETH increase
 
             if(pairInfo.poolState == PoolRunningPhase.BidPhase){
                 require(block.timestamp <= pairInfo.timeCreated + OPEN_BID_DURATION, 'FESN: BID TOO LATE');  // Bid keep open for two weeks
@@ -202,6 +214,7 @@ contract FeswaNFT is ERC721, Ownable {
             require(block.timestamp > pairInfo.lastBidTime + CLOSE_BID_DELAY, 'FESN: BID ON GOING');
         }
 
+        // could prevent recursive calling
         pairInfo.poolState = PoolRunningPhase.BidSettled;
 
         // Airdrop to the first tender
@@ -297,6 +310,11 @@ contract FeswaNFT is ERC721, Ownable {
      */
     function setTokenURIPrefix(string memory prefix) public onlyOwner {
         _setBaseURI(prefix);
+    }
+
+    function setTokenURI(uint256 tokenID, string memory tokenURI) public {
+        require(msg.sender == ownerOf(tokenID), 'FESN: NOT TOKEN OWNER');       // ownerOf checked if tokenID existing
+        _setTokenURI(tokenID, tokenURI);
     }
 }
 ```

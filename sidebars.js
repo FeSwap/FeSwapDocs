@@ -3,8 +3,39 @@ module.exports = {
     'overview',
     {
       type: 'category',
+      label: 'FeSwap Know-How',
+      collapsed: true,
+      items: [
+        {
+          type: 'doc',
+          id:   'How/get',                     // document id
+        },
+        {
+          type: 'doc',
+          id:   'How/swap',                     // document id
+        },
+        {
+          type: 'doc',
+          id: 'How/liquidity',                  // document id
+        },
+        {
+          type: 'doc',
+          id: 'How/mining',                     // document id
+        },
+        {
+          type: 'doc',
+          id:   'How/nft',                      // document id
+        },
+        {
+          type: 'doc',
+          id: 'How/sponsor',                    // document id
+        },
+       ],
+    },
+    {
+      type: 'category',
       label: 'FeSwap Contracts',
-      collapsed: false,
+      collapsed: true,
       items: [
         'Contracts/fesw',
         'Contracts/factory',
@@ -20,7 +51,7 @@ module.exports = {
     {
       type: 'category',
       label: 'FeSwap Governance',
-      collapsed: false,
+      collapsed: true,
       items: [
         'FeSwap/introduction',
         'FeSwap/implementation',
@@ -34,7 +65,7 @@ module.exports = {
     {
       type: 'category',
       label: 'FreeSwap Exchange Protocol',
-      collapsed: false,
+      collapsed: true,
       items: [
         'FreeSwap/abstract',
         'FreeSwap/introduction',

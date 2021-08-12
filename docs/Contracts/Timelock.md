@@ -14,17 +14,28 @@ _______________________
 
 FeSwap `TimeLock` contract is the contract used to finally execute the proposals that win the voting successfully. Only the [`FeswGovernor`](FeswGovernor.md) contract can call `TimeLock` to queue/excute the proposal. 
 
-### <span className="title"> FESW Token Address </span>
+### <span className="title"> Timelock Address </span>
 
 | ETH NetWork | FESW Token Address |
 | :---------: | :----------------: |
-| ETH Mainnet |  Waiting |
+| ETH Mainnet |  [0xd24347C40f4ed36f326f82E3bEFFfaf3B8D436a1](https://etherscan.io/address/0xd24347c40f4ed36f326f82e3befffaf3b8d436a1)  |
 | ETH Testnet Ropsten | [0xFA2Dbaa137b3Bd13d8f1758311Ae909397EC18AB](https://ropsten.etherscan.io/address/0xFA2Dbaa137b3Bd13d8f1758311Ae909397EC18AB) |
 | ETH Testnet Rinkeby | [0xFA2Dbaa137b3Bd13d8f1758311Ae909397EC18AB](https://rinkeby.etherscan.io/address/0xFA2Dbaa137b3Bd13d8f1758311Ae909397EC18AB)|
 | ETH Testnet Goerli | [0xFA2Dbaa137b3Bd13d8f1758311Ae909397EC18AB](https://goerli.etherscan.io/address/0xFA2Dbaa137b3Bd13d8f1758311Ae909397EC18AB)|
 | ETH Testnet Kovan | [0xFA2Dbaa137b3Bd13d8f1758311Ae909397EC18AB](https://kovan.etherscan.io/address/0xFA2Dbaa137b3Bd13d8f1758311Ae909397EC18AB) |
 
-### <span className="title"> FESW Token Code </span>
+### <span className="title"> Timelock Deployments Parameters </span>
+
+- ** constructor(address admin\_, uint delay\_) **
+
+| Parameters | Value  |  information |
+| :--------- | :---------------- | :-------- |
+| admin\_ |  [0x77F98c147a37564c32E48054Bff7692A1F97f343](https://etherscan.io/address/0x77F98c147a37564c32E48054Bff7692A1F97f343) | This is the address of [FeSwap Governance](../Contracts/FeswGovernor) contract, which is the only entity that can operate Timelock contract. |
+| delay\_ | 0x2a300 | This is the minimum duration the proposal must wait after it has been queued to be executed. This measure is for security considerraions. <br/> 0x2a300 means 172800 seconds, ie. 2 days |
+
+*** Parameters on ETH Chain *
+
+### <span className="title"> Timelock Contract Code </span>
 
 FeSwap `Timelock` code is open-sourced at [Github FeSwapCore Project](https://github.com/FeSwap/Governance/blob/main/contracts/Timelock.sol) 
 
@@ -48,6 +59,7 @@ contract Timelock {
 
     uint public constant GRACE_PERIOD = 14 days;
     uint public constant MINIMUM_DELAY = 2 days;
+//  uint public constant MINIMUM_DELAY = 10 minutes;        // for on-chain test
     uint public constant MAXIMUM_DELAY = 30 days;
 
     address public admin;

@@ -14,19 +14,31 @@ _______________________
 
 FESW is the FeSwap DAO governance token, which represents the votes to FeSwap DAO governance proposals. FESW is ERC20 compliant, and provides interface to managing the voting rights. 
 
-FESW cap is 1000,000,000 FESW, and is distributed to FeSwap community members based on the contribution to FeSwap DAO, including providing liquidity, conducting swap, sponsoring, NFT bidding, developing, marketing, governance voting, and so on. Please refer to [FeSwap Governance](../FeSwap/governance) for the distribution rules.
+FESW total supply is 1,000,000,000 FESW, and is distributed to FeSwap community members based on their contribution to FeSwap DAO, which may include providing liquidity, conducting token exchange, sponsoring FeSwap, token-pair NFT bidding, developing, marketing, governance voting, and so on. Please refer to [FeSwap Governance](../FeSwap/governance) for the distribution rules.
 
 ### <span className="title"> FESW Token Address </span>
 
 | ETH NetWork | FESW Token Address |
 | :---------: | :----------------: |
-| ETH Mainnet |  Waiting |
+| ETH Mainnet |  [0x4269eaec0710b874ea55e2AeDc8Fb66223522Bbe](https://etherscan.io/address/0x4269eaec0710b874ea55e2AeDc8Fb66223522Bbe)  |
 | ETH Testnet Ropsten | [0xcfcc81c508a8025879a27257cc0f699f9f2016ab](https://ropsten.etherscan.io/address/0xcfcc81c508a8025879a27257cc0f699f9f2016ab) |
 | ETH Testnet Rinkeby | [0xcfcc81c508a8025879a27257cc0f699f9f2016ab](https://rinkeby.etherscan.io/address/0xcfcc81c508a8025879a27257cc0f699f9f2016ab)|
 | ETH Testnet Goerli | [0xcfcc81c508a8025879a27257cc0f699f9f2016ab](https://goerli.etherscan.io/address/0xcfcc81c508a8025879a27257cc0f699f9f2016ab)|
 | ETH Testnet Kovan | [0xcfcc81c508a8025879a27257cc0f699f9f2016ab](https://kovan.etherscan.io/address/0xcfcc81c508a8025879a27257cc0f699f9f2016ab) |
 
-### <span className="title"> FESW Token Code </span>
+### <span className="title"> FESW Token Deployments Parameters </span>
+
+- ** constructor( address account, address minterBurner\_, uint mintingAllowedAfter\_ ) **
+
+| Parameters | Value  |  information |
+| :--------- | :---------------- | :-------- |
+| account |  0xdc7ef6b5d1a15768c0520e54e7414e1e0297e141 | This is the address receiving all the initially minted FESW tokens. FeSwap deployment address is used as this address. Some times later, all the FeSwap tokens will be distributed to various vesting contract according to the [FeSwap governance](../FeSwap/governance) rules. |
+|  minterBurner\_ | 0xdc7ef6b5d1a15768c0520e54e7414e1e0297e141 | This address controls the FESW minting and burning. FeSwap deployment address is also used at this time. Later it will be shifted to TimeLock contact, which is operated by FeSwap Governance contract that can enforce FESW minting and burning under the control of community proposal and voting. |
+| mintingAllowedAfter\_ | 0x6a6d6ed0 | This is the timestamp of the time when FESW minting is allowed. <br/>0x6a6d6ed0 means 2026-08-01 11:58:08 |
+
+*** Parameters on ETH Chain *
+
+### <span className="title"> FESW Token Contract Code </span>
 
 FESW token code is open-sourced at [Github FeSwapCore Project](https://github.com/FeSwap/Governance/blob/main/contracts/Feswap.sol) 
 
@@ -62,7 +74,7 @@ contract Fesw {
     uint32 public constant minimumTimeBetweenMints = 1 days * 365;
 
     /// @notice Cap that can be minted at each mint after 5 years
-    uint public constant mintCap = 10_000_000e18;      // 10 million FESW
+    uint public mintCap = 10_000_000e18;      // 10 million FESW
 
     // @notice Allowance amounts on behalf of others
     // Documentation tag @notice not valid for non-public state variables
@@ -148,6 +160,8 @@ contract Fesw {
         require(msg.sender == minterBurner, "FESW::mint: only the minter can mint");
         require(block.timestamp >= mintingAllowedAfter, "FESW::mint: minting not allowed yet");
         require(dst != address(0), "FESW::mint: cannot transfer to the zero address");
+        //maximum 8 times minting
+        require(mintCap >= 50_000e18, "FESW::mint: minting not allowed any more");   
 
         // record the mint
         mintingAllowedAfter = SafeMath.add(block.timestamp, minimumTimeBetweenMints);
@@ -155,6 +169,7 @@ contract Fesw {
         // mint the amount
         uint96 amount = safe96(rawAmount, "FESW::mint: amount exceeds 96 bits");
         require(amount <= mintCap, "FESW::mint: exceeded mint cap");
+        mintCap = mintCap / 2;
         totalSupply = safe96(SafeMath.add(totalSupply, amount), "FESW::mint: totalSupply exceeds 96 bits");
 
         // transfer the amount to the recipient

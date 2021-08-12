@@ -21,11 +21,22 @@ The voting quorum can be changed by the `FeswGovernor` proposals from FeSwap com
 
 | ETH NetWork | FeSwap Governor Contract Address |
 | :---------: | :----------------: |
-| ETH Mainnet |  Waiting |
+| ETH Mainnet |  [0x77F98c147a37564c32E48054Bff7692A1F97f343](https://etherscan.io/address/0x77F98c147a37564c32E48054Bff7692A1F97f343) |
 | ETH Testnet Ropsten | [0x179E988DaE54D010e86F288C4872d7d3eB4EF0C6](https://ropsten.etherscan.io/address/0x179E988DaE54D010e86F288C4872d7d3eB4EF0C6) |
 | ETH Testnet Rinkeby | [0x179E988DaE54D010e86F288C4872d7d3eB4EF0C6](https://rinkeby.etherscan.io/address/0x179E988DaE54D010e86F288C4872d7d3eB4EF0C6)|
 | ETH Testnet Goerli | [0x179E988DaE54D010e86F288C4872d7d3eB4EF0C6](https://goerli.etherscan.io/address/0x179E988DaE54D010e86F288C4872d7d3eB4EF0C6)|
 | ETH Testnet Kovan | [0x179E988DaE54D010e86F288C4872d7d3eB4EF0C6](https://kovan.etherscan.io/address/0x179E988DaE54D010e86F288C4872d7d3eB4EF0C6) |
+
+### <span className="title"> FeSwap Governor Deployments Parameters </span>
+
+- ** constructor(address timelock\_, address Feswa\_) **
+
+| Parameters | Value  |  information |
+| :--------- | :---------------- | :-------- |
+| timelock\_ |  [0xd24347C40f4ed36f326f82E3bEFFfaf3B8D436a1](https://etherscan.io/address/0xd24347C40f4ed36f326f82E3bEFFfaf3B8D436a1) | This is the address of [TimeLock Governance](../Contracts/Timelock) contract, which is the entity that concretely enforce the governance proposals winning the community voting. |
+| Feswa\_ | [0x4269eaec0710b874ea55e2AeDc8Fb66223522Bbe](https://etherscan.io/address/0x4269eaec0710b874ea55e2AeDc8Fb66223522Bbe) | This is [FESW token](../Contracts/fesw) address. |
+
+*** Parameters on ETH Chain *
 
 ### <span className="title"> FeSwap Governor Contract Code </span>
 
@@ -68,18 +79,6 @@ contract FeswGovernor {
     /// @notice The total number of proposals
     uint public proposalCount;
 
-    /// @notice Ballot receipt record for a voter
-    struct Receipt {
-        // Whether or not a vote has been cast
-        bool hasVoted;
-
-        // Whether or not the voter supports the proposal
-        bool support;
-
-        // The number of votes the voter had, which were cast
-        uint96 votes;
-    }
-
     struct Proposal {
         // Unique id for looking up a proposal
         uint id;
@@ -120,6 +119,18 @@ contract FeswGovernor {
 
         // Flag marking whether the proposal has been executed
         bool executed;
+    }
+    
+    /// @notice Ballot receipt record for a voter
+    struct Receipt {
+        // Whether or not a vote has been cast
+        bool hasVoted;
+
+        // Whether or not the voter supports the proposal
+        bool support;
+
+        // The number of votes the voter had, which were cast
+        uint96 votes;
     }
 
     /// @notice Possible states that a proposal may be in

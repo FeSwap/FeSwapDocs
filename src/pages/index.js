@@ -47,7 +47,7 @@ const features = [
     description: (
       <>
         Two one-way swap sub-pools are created for each token pair. Internal arbitrage are triggered
-         to relieve price deviation at preset threshold.
+         to smooth price deviation at preset threshold.
       </>
     ),
     Url: 'docs/FreeSwap/abstract',
@@ -105,12 +105,17 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Decentralized Crypto Exchange of Zero Fee`}
+      title={`Decentralized Crypto Exchange with Zero Commision Fee`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h2 className="hero__title">{siteConfig.title}</h2>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <p className={styles.blacktext}>This is an experiment. FeSwap is not the custody of your crypto asset. 
+                                          Please take your own risk to use FeSwap application. <br/>
+                                          FeSwap targets to provide decentralized crypto exchange without charging 
+                                          any commision fee, but make competitive profits for the liquidity providers.
+          </p>
         </div>
       </header>
       <main>

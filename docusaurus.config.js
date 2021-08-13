@@ -4,8 +4,8 @@ const path = require("path");
 const katex = require("rehype-katex");
 
 module.exports = {
-  title: 'FeSwap',
-  tagline: '🤲💰️ Decentralized Crypto AMM Exchange with Zero Transaction Fee 💰️🤲',
+  title: 'FeSwap is Alive',
+  tagline: '🤲💰️ Decentralized Crypto AMM Exchange with Zero Commision Fee 💰️🤲',
   url: 'https://wwww.feswap.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -116,7 +116,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} FeSwap Decentralized Exchange. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} FeSwap Decentralized Free Exchange.`,
     },
   },
   presets: [

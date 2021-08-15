@@ -32,7 +32,7 @@ FESW is the token representing FeSwap governance votes. There are several ways t
   - Each bidder will receive 500 FESW each time he/she bids for any NFT even though he/she lose the bidding finally.<br/>
     *[**Learn more about token pair NFT bidding](/nft)*<br/>
 - Sponsor FeSwap 
-  - Each sponsor will receive FESW tokens at rate of 100,000 FESW/ETH as the giveaway, based on the sponsored amount.<br/>
+  - Each sponsor will receive FESW tokens as the giveaway at a slowly down rate, which takes the initial rate of 100,000 FESW/ETH, and is decreased at the rate of 20 FESW/ETH based on the totally sponsored ETH amount. <br/>
     *[**Learn more about sponsoring FeSwap](/sponsor)*<br/>
 - Involve in FeSwap community developing and spreading
   - For the builder of FeSwap community, FESW token will be presented as the feedback.

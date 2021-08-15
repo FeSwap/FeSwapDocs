@@ -177,8 +177,198 @@ ______________________________
 ::: 
 
 </GuidanceWindow>
+
+_____________________________
+
+### <span className="title"> Guidance to NFT Extra time bidding </span>
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT07.png">
+
+:::info
+
+- If less than 2 hours left until the bidding end time, 
+  <Clock size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}} /> will be displayed to prompt 
+  that the bidding is entering the last 2-hour phase. <br/><br/>
+- Within this last two hours, if anyone bids with a new price, the bidding will enter extra time phase. It means that the bidding is extended to two hours starting from the very last bidding time. 
+  <Clock size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}} /> will be displayed to prompt 
+  the extra time phase.<br/><br/>
+- Extra bidding time is recounted each time a new bidding comes in, until no one bids in this last two hours, then this NFT bidding is ended.  
+  <Flag size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}} /> is displayed to prompt 
+  this bid ending phase.
+::: 
+
+</GuidanceWindow>
+
+______________________________
+
+### <span className="title"> Guidance to Claim FESW token </span>
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT08.png">
+
+:::info
+
+- In the left picture, the <Flag size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}} /> flags show that 3 NFTs have ended its bidding.<br/><br/>
+- The NFT flaged with <User size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}} /> is the NFT you have won. Double-click this NFT, the button <span style={{color:'#ff007a'}}><strong>"Claim NFT"</strong></span> is displayed.
+
+::: 
+<br/>
+
+<strong>Step 1:</strong> Double-click the NFT you have won. <br/><br/>
+<strong>Step 2:</strong> Click the button <span style={{color:'#ff007a'}}><strong>"Claim NFT"</strong></span> and follow the instructions to complete the transaction until it is confirmed in the Ethereum network.<br/><br/>
+
+:::info
+
+While the NFT is claimed, some FESW tokens are dispatched to your wallet, the amount of which is propotional to your bidding price at the rate of 20000FESW/ETH.  
+
+::: 
+
+</GuidanceWindow>
+
+
 ______________________________
 
 
+## <span className="title"> Guidance to Sell/Buy NFT </span>
+
+### <span className="title"> How to Sell NFT </span>
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT09.png">
+
+:::info
+
+- In the left picture, your NFT is flaged with <User size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}} /> and <Lock size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}} />, which means you have claimed the FESW airdrop and you are holding the NFT.
+
+::: 
+
+<strong>Step 1:</strong> Double-click your NFT to select it.<br/><br/>
+<strong>Step 2:</strong> Input the <strong>"Selling Price".</strong><br/><br/>
+<strong>Step 3:</strong> Click the button <span style={{color:'#ff007a'}}><strong>"Sell NFT"</strong></span>, and follow the next instructions to put up you NFT for sale. <br/><br/>
+
+:::caution
+
+- You could input any price you want except zero. Note that the UI does not do any check to your price, so please specify your price very carefully.
+
+::: 
+
+
+</GuidanceWindow>
+
+______________________________
+
+### <span className="title"> How to End NFT Selling </span>
+
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT09A.png">
+
+:::info
+
+- You could end your NFT selling anytime before it is sold out. 
+
+::: 
+
+<strong>Step 1:</strong> Double-click your NFT currently on sale.<br/><br/>
+<strong>Step 2:</strong> Click the button <span style={{color:'#ff007a'}}><strong>"Close NFT Sale"</strong></span>, and follow the next instructions. <br/><br/>
+
+</GuidanceWindow>
+
+______________________________
+
+### <span className="title"> How to Change NFT Selling Price </span>
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT09B.png">
+
+:::info
+
+- You could change your NFT selling price anytime before it is sold out. 
+
+::: 
+
+<strong>Step 1:</strong> Doubl-click your NFT currently on sale.<br/><br/>
+<strong>Step 2:</strong> Click the button <span style={{color:'#ff007a'}}><strong>"Change NFT Price"</strong></span>, and follow the next instructions. <br/><br/>
+
+:::caution
+
+- You could input any price you want including zero. Zero price means you want to end the NFT selling. Note that the UI does not do any check to your price, so please specify your price very carefully.
+
+::: 
+
+</GuidanceWindow>
+
+______________________________
+
+### <span className="title"> How to Buy NFT </span>
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT10.png">
+
+:::info
+
+- While an NFT is on sale, it is flaged with <Volume2 size="18" style={{width: '2em', color: 'Tomato', backgroundColor: 'LightGray', borderRadius:'2px'}} />.
+
+- Anyone can buy the NFT on sale with the selling price.
+
+- Optionally NFT new sale price could be specified to keep it still on sale.
+
+- If no new price speicified, or zero-price speicified, the NFT will be kept for holding, not for selling.
+
+::: 
+
+<strong>Step 1:</strong> Double-click the NFT on sale. <br/><br/>
+<strong>Step 2:</strong> Input the new price in the area <strong>"Selling Price"</strong>, or just keep it empty.<br/><br/>
+<strong>Step 3:</strong> Click the button <span style={{color:'#ff007a'}}><strong>"Buy NFT"</strong></span>, and follow the next instructions. <br/><br/>
+
+:::caution
+
+- You could input any new sale price you want to sell the NFT only if it is more than current price, the App does not do any check, so please specify your price very surely.
+
+::: 
+
+</GuidanceWindow>
+
+______________________________
+
+
+## <span className="title"> Guidance to Manage NFT </span>
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT12.png">
+
+  <strong>Step 1:</strong> Click <strong>"Liquidity"</strong> Menu.<br/><br/>
+
+  <strong>Step 2:</strong> Click the button <span style={{color:'#ff007a'}}><strong>"Manage Pool"</strong></span> from the window like the left one.<br/>
+
+</GuidanceWindow>
+
+______________________________
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT13.png">
+  
+  <strong>Step 3:</strong> Select the token pair you want to create.<br/>
+
+:::info
+- Doule-click the token pair flaged with <strong>"Pool to be create"</strong>, You could easily select this token pair as the target.
+::: 
+
+  <strong>Step 4:</strong> Click the button <span style={{color:'#ff007a'}}><strong>"Create NFT Swap Pool"</strong></span> and follow the instrunction from the App.<br/><br/>
+
+  <strong>Step 5:</strong> Wait until your transacion is confirmed on Ethereum network.<br/>
+  
+</GuidanceWindow>
+
+______________________________
+
+<GuidanceWindow imageUrl="img/Guidance/NFT/NFT14.png">
+
+:::info
+
+- Shown as the window left, there are two parameters you could configure while you are creating the token pair first, and while you want to change the token pair settings later.<br/>
+
+- <strong>Profit receiver:</strong> As the NFT owner, you can share the token pair swap profit together with FeSwap. If you like, you could specify the profit receiver address, otherwise the profit will be sent to your NFT owner address. <br/>
+
+- <strong>Price gap to trigger arbitrage:</strong> This is the percentage of the token price diffenece of the two sub-pools, at which the internal  token swapping will be enforced. This percentage could be 1%-5%, default value is 1%. Value more than 2% is not recommended.
+
+::: 
+  
+</GuidanceWindow>
+
+______________________________
 
 

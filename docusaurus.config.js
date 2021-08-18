@@ -107,7 +107,7 @@ module.exports = {
           items: [
             {
               label: 'Contact',
-              href: 'mailto: desk@fesap.io',
+              href: 'mailto: desk@feswap.io',
             },
             {
               label: 'GitHub',

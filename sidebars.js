@@ -8,6 +8,10 @@ module.exports = {
       items: [
         {
           type: 'doc',
+          id:   'How/lock-up',                     // document id
+        },
+        {
+          type: 'doc',
           id:   'How/get',                     // document id
         },
         {

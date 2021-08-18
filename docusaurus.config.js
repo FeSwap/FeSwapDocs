@@ -106,8 +106,8 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Contact',
+              href: 'mailto: desk@fesap.io',
             },
             {
               label: 'GitHub',

@@ -20,10 +20,10 @@ Only the NFT owner of the corresponding token-pair has the right to create the o
 
 | ETH NetWork | Feswap Factory Contract Address |
 |:------: | :--------------: |
-| ETH Mainnet |  Waiting |
+| ETH Mainnet |  [0xEDc22C273ea25EeDA49F049e528150dBA367Da9A](https://etherscan.io/address/0xedc22c273ea25eeda49f049e528150dba367da9a) |
 | ETH Testnet Ropsten | [0x75f7b730c51610aba6f3d89deb4864f156c8e747](https://ropsten.etherscan.io/address/0x75f7b730c51610aba6f3d89deb4864f156c8e747) |
 | ETH Testnet Rinkeby | [0x75f7b730c51610aba6f3d89deb4864f156c8e747](https://rinkeby.etherscan.io/address/0x75f7b730c51610aba6f3d89deb4864f156c8e747)|
-| ETH Testnet Goerli | [0x75f7b730c51610aba6f3d89deb4864f156c8e747](https://goerli.etherscan.io/address/0x75f7b730c51610aba6f3d89deb4864f156c8e747)|
+| ETH Testnet Goerli | [0x1BdB1555bDc425183ad56FcB31c06205726FEFB0](https://goerli.etherscan.io/address/0x1BdB1555bDc425183ad56FcB31c06205726FEFB0)|
 | ETH Testnet Kovan | [0x75f7b730c51610aba6f3d89deb4864f156c8e747](https://kovan.etherscan.io/address/0x75f7b730c51610aba6f3d89deb4864f156c8e747) |
 
 ### <span className="title"> FeSwapFactory Code </span>
@@ -33,7 +33,7 @@ The open-source FeSwap `Factory` contact is stored at [Github FeSwapCore Project
 Following is the code deployed:
 
 ```sol title="FeSwapFactory.sol"
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
 pragma solidity =0.6.12;
 
 import './interfaces/IFeSwapFactory.sol';
@@ -41,8 +41,8 @@ import './FeSwapPair.sol';
 
 contract FeSwapFactory is IFeSwapFactory {
     uint64 public constant RATE_TRIGGER_FACTORY         = 10;       //  price difference be 1%
-    uint64 public constant RATE_CAP_TRIGGER_ARBITRAGE   = 50;       //  price difference < 10%
-    uint64 public constant RATE_PROFIT_SHARE            = 11;        //  Feswap and Pair owner share 10% of the swap profit, 11 means 1/12
+    uint64 public constant RATE_CAP_TRIGGER_ARBITRAGE   = 50;       //  price difference < 5%
+    uint64 public constant RATE_PROFIT_SHARE            = 11;       //  Feswap and Pair owner share 1/12 of the swap profit, 11 means 1/12
 
     address public override factoryAdmin;
     address public override feeTo;
@@ -57,7 +57,7 @@ contract FeSwapFactory is IFeSwapFactory {
     event PairCreated(address indexed tokenA, address indexed tokenB, address pairAAB, address pairABB, uint allPairsLength);
     event PairOwnerChanged(address indexed pairAAB, address indexed pairABB, address oldOwner, address newOwner);
 
-    constructor(address _factoryAdmin) public {
+    constructor(address _factoryAdmin) public {                     //factoryAdmin will be set to TimeLock after Feswap works normally
         factoryAdmin        = _factoryAdmin;
         rateTriggerFactory  = RATE_TRIGGER_FACTORY;
         rateCapArbitrage    = RATE_CAP_TRIGGER_ARBITRAGE;
@@ -131,7 +131,7 @@ contract FeSwapFactory is IFeSwapFactory {
 
     function setRouterFeSwap(address _routerFeSwap) external override {
         require(msg.sender == factoryAdmin, 'FeSwap: FORBIDDEN');
-        routerFeSwap = _routerFeSwap;                                         // for Router Update
+        routerFeSwap = _routerFeSwap;                                         // for Router Initiation
     }    
 
     function configFactory(uint64 newTriggerRate, uint64 newRateCap, uint64 newProfitShareRate) external override {
@@ -141,7 +141,8 @@ contract FeSwapFactory is IFeSwapFactory {
         rateProfitShare     = newProfitShareRate;                   // 1/X => rateProfitShare = (X-1)
     } 
     
-    // Function to update Router in case of emergence
+    // Function to update Router in case of emergence, factoryAdmin will be set to TimeLock after Feswap works normally
+    // routerFeSwap must be secured and absolutely cannot be replaced uncontrolly.
     function managePair(address _tokenA, address _tokenB, address _pairOwner, address _routerFeSwap) external override {
         require(msg.sender == factoryAdmin, 'FeSwap: FORBIDDEN');
         address pairAAB = getPair[_tokenA][_tokenB];

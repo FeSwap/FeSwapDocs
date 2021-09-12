@@ -26,9 +26,10 @@ As each token pair has two liquidity sub-pools, the two liquidity tokens of the 
 
 | ETH NetWork | Token Pair | Staking Reward Contract Address |
 |:----------: | :-------:  | :-----------------------------: |
-| ETH Mainnet |  ETH/WBTC   |  Waiting |
-| ETH Mainnet |  ETH/USDT   |  Waiting |
-| ETH Mainnet |  ETH/FESW   |  Waiting |
+| ETH Mainnet |  ETH/WBTC   | [0xaC262B589b785e48E2A331Cb9cAf86fFAf069f91](https://etherscan.io/address/0xac262b589b785e48e2a331cb9caf86ffaf069f91) |
+| ETH Mainnet |  ETH/USDT   | [0x23D04f77063f60042aAB7aAEDF14ADDbd7bE6Ee9](https://etherscan.io/address/0x23d04f77063f60042aab7aaedf14addbd7be6ee9) |
+| ETH Mainnet |  ETH/USDC   | [0xA4A0B0A90f1574d02c55577f7aA5a698Ca4B47c8](https://etherscan.io/address/0xa4a0b0a90f1574d02c55577f7aa5a698ca4b47c8) |
+| ETH Mainnet |  ETH/FESW   | [0x33B6af4A9ce826621F6c89Fe8563337f8A1CA51e](https://etherscan.io/address/0x33b6af4a9ce826621f6c89fe8563337f8a1ca51e) |
 | ETH Testnet Ropsten |  ETH/FESW   | [0xC6e82Ec5B319bbBC8ad63F94873c8E9fD9B1EfDf](https://ropsten.etherscan.io/address/0xC6e82Ec5B319bbBC8ad63F94873c8E9fD9B1EfDf) |
 | ETH Testnet Rinkeby |  ETH/FESW   | [0xC6e82Ec5B319bbBC8ad63F94873c8E9fD9B1EfDf](https://rinkeby.etherscan.io/address/0xC6e82Ec5B319bbBC8ad63F94873c8E9fD9B1EfDf)|
 | ETH Testnet Goerli |  ETH/FESW   | [0xC6e82Ec5B319bbBC8ad63F94873c8E9fD9B1EfDf](https://goerli.etherscan.io/address/0xC6e82Ec5B319bbBC8ad63F94873c8E9fD9B1EfDf)|

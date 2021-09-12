@@ -18,7 +18,7 @@ FeSwap staking reward factory contact is used to distribute reward FESW tokens t
 
 | ETH NetWork | Staking Reward Factory Contract Address |
 |:----------: | :-----------------------------: |
-| ETH Mainnet |  Waiting |
+| ETH Mainnet |  [0x9f35C6E6bb19A4cd7b1527CbCEB7d70be1021675](https://etherscan.io/address/0x9f35c6e6bb19a4cd7b1527cbceb7d70be1021675) |
 | ETH Testnet Ropsten  | [0x940EA0910C2B71794e7Bc411ea6cf45091B1d1C4](https://ropsten.etherscan.io/address/0x940EA0910C2B71794e7Bc411ea6cf45091B1d1C4) |
 | ETH Testnet Rinkeby  | [0x940EA0910C2B71794e7Bc411ea6cf45091B1d1C4](https://rinkeby.etherscan.io/address/0x940EA0910C2B71794e7Bc411ea6cf45091B1d1C4)|
 | ETH Testnet Goerli   | [0x940EA0910C2B71794e7Bc411ea6cf45091B1d1C4](https://goerli.etherscan.io/address/0x940EA0910C2B71794e7Bc411ea6cf45091B1d1C4)|

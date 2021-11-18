@@ -12,10 +12,10 @@ FeSwap heartfully embraces the tenet of decentralized governance of neutrality a
 
 FeSwap will issue FESW ERC20 tokens as the tool for the decentralized community governance, the total supply of FESW token is 1 billion. All FESW tokens are minted at the genesis and released gradually over the 5 years course:
 
-+ FESW Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FeSwap DAO
-+ FESW Symbol: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  FESW
-+ FESW Total supply: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1,000,000,000
-+ FESW Inflation：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
++ <span className="text_span">FESW Name:</span>           <b className="title">FeSwap DAO</b>
++ <span className="text_span">FESW Symbol:</span>         <b className="title">FESW</b>
++ <span className="text_span">FESW Total supply:</span>   <b className="title">1,000,000,000</b>
++ <span className="text_span">FESW Inflation:</span>      <b className="title">0</b>
 
 The target issuance members include all kinds of people who help FeSwap to set up, grow and strengthen:
 + Swap pair creators 
@@ -37,6 +37,8 @@ FESW allocation rules are as follows:
 
 + 10%: FeSwap founders, with 5-year vesting:
 
+<div className="table">
+
 | Year    | Release proportion   | Release amount    |
 |:-------:|:---------:|:-------------:|
 | Year 1   |  4%      | 40,000,000    |
@@ -45,7 +47,11 @@ FESW allocation rules are as follows:
 | Year 4  |  1%      | 10,000,000    |
 | Year 5  |  1%      | 10,000,000    |
 
+</div>
+
 + 20%: Project team, of which 16% with 5-year vesting, and 4% for strategic reserve: 
+
+<div className="table">
 
 | Year              | Release proportion   | Release amount    |
 |:-----------------:|:--------------------:|:-----------------:|
@@ -56,25 +62,37 @@ FESW allocation rules are as follows:
 | Year 5            |  2%                  | 20,000,000    |
 | Strategic reserve |  4%                  | 40,000,000    |
 
+</div>
+
 + 20%：to all bidders participating in the FeSwap [Trading NFT] (NFT.md) auction, and to financial sponsors of the FeSwap project.
 
 + 15%：FeSwap liquidity providers，distributed in 3 years:
 
+<div className="table">
+
 | Year    | Distribution proportion   | Distribution amount    |
 |:-------:|:---------:|:-------------:|
 | Year 1   |  9%      | 90,000,000    |
 | Year 2  |  4%      | 40,000,000    |
 | Year 3  |  2%      | 20,000,000    |
+
+</div>
 
 + 15%：FeSwap exchange users，distributed in 3 years:
 
+<div className="table">
+
 | Year    | Distribution proportion   | Distribution amount    |
 |:-------:|:---------:|:-------------:|
 | Year 1   |  9%      | 90,000,000    |
 | Year 2  |  4%      | 40,000,000    |
 | Year 3  |  2%      | 20,000,000    |
 
+</div>
+
 + 10%: to community members participating in community governance voting, distributed in 5 years. If the distribution is not completed in the previous year, roll into the next year:
+
+<div className="table">
 
 | Year    | Distribution proportion   | Distribution amount    |
 |:-------:|:-------------------------:|:----------------------:|
@@ -84,7 +102,11 @@ FESW allocation rules are as follows:
 | Year 4   |  2%                      | 20,000,000             |
 | Year 5   |  2%                      | 20,000,000             |
 
+</div>
+
 + 8%: to FeSwap foundation, used to cultivate and improve FeSwap ecosystem, with 5 years vesting: 
+
+<div className="table">
 
 | Year     | Release proportion        | Release amount         |
 |:--------:|:-------------------------:|:----------------------:|
@@ -94,6 +116,7 @@ FESW allocation rules are as follows:
 | Year 4   |  1%                       | 10,000,000             |
 | Year 5   |  1%                       | 10,000,000             |
 
+</div>
 
 ### <span className="title"> Community governance </span>
 

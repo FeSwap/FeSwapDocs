@@ -80,6 +80,15 @@ html[data-theme='dark'] .footer {
   color: #00A4B8; 
 }
 
+.text_span {
+  width:  200px; 
+  display:inline-block;
+}
+
+.table {
+  padding-left:  40px; 
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;

@@ -20,12 +20,16 @@ To simplify the calculation, it is assumed that the FreeSwap trading and arbitra
 
 The changes in the amount of $Tokens$ during the trade and arbitrage process are shown in the following table:
 
+<div className="table">
+
 | Sub Pools       | A-Pool                        | B-Pool                        |
 |:---------------:|:-----------------------------:|:-----------------------------:|
 |Token State      | $(N_{AA}\ ,\ N_B)$            | $(N_A\ ,\ N_{BB})$            |
 |Initial State    | $(X\ ,\ Y)$                   | $(X\ ,\ Y)$                   |
 |Post Trade       | $(X\ +\ x\ ,\ Y\ -\ y)$       | $(X\ ,\ Y)$                   |
 |Post Arbitrage   | $(X\ +\ x'_1\ ,\ Y\ -\ y'_1)$ | $(X\ +\ x'_2\ ,\ Y\ -\ y'_2)$ |
+
+</div>
 
 According to the "constant-product invariant" formula, there are:
 
@@ -83,12 +87,16 @@ The above analysis is based on the assumption that the amount of tokens in A-Poo
 
 In this case, the changes in the amount of tokens during the trade and arbitrage process are shown in the following table:
 
+<div className="table">
+
 | Sub-Pools       | A-Pool                            | B-Pool                              |
 |:---------------:|:---------------------------------:|:-----------------------------------:|
 | Token Pair      | $(N_{AA}\ ,\ N_B)$                | $(N_A\ ,\ N_{BB})$                  |
 | Initial State   | $(X_1\ ,\ Y_1)$                   | $(X_2\ ,\ Y_2)$                     |
 | Post Trade      | $(X_1\ +\ x_1\ ,\ Y_1\ -\ y_1)$   | $(X_2\ ,\ Y_2)$                     |
 | Post Arbitrage  | $(X_1\ +\ x_1'\ ,\ Y_1\ -\ y_1')$ | $(X_2\ + \ x_2'\ ,\ Y_2\ - \ y_2')$ |
+
+</div>
 
 Assuming that the $K$ Value ratio of A-Pool and B-Pool is represented by $\beta$, the following relationship exists:
 

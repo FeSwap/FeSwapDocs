@@ -68,6 +68,17 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'FeSwap on Binance',
+      collapsed: true,
+      items: [
+        'Binance/governance',
+        'Binance/improvement',
+        'Binance/nft',
+        'Binance/contracts',
+      ],
+    },
+    {
+      type: 'category',
       label: 'FreeSwap Exchange Protocol',
       collapsed: true,
       items: [

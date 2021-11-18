@@ -12,7 +12,7 @@
     "description": "The label for category Features in sidebar someSidebar"
   },
   "sidebar.someSidebar.category.FeSwap": {
-    "message": "FeSwap 去中心化交易所",
+    "message": "FeSwap去中心化交易所",
     "description": "The label for category FeSwap in sidebar someSidebar"
   },
   "sidebar.someSidebar.category.FreeSwap Exchange Protocol": {
@@ -24,15 +24,15 @@
     "description": "The label for category FeSwap Governance in sidebar someSidebar"
   },
   "sidebar.FeSwapSidebar.category.FeSwap Contracts": {
-    "message": "FeSwap Contracts",
+    "message": "FeSwap 智能合约",
     "description": "The label for category FeSwap Contracts in sidebar FeSwapSidebar"
   },
   "sidebar.FeSwapSidebar.category.FeSwap Governance": {
-    "message": "FeSwap Governance",
+    "message": "FeSwap 社区治理",
     "description": "The label for category FeSwap Governance in sidebar FeSwapSidebar"
   },
   "sidebar.FeSwapSidebar.category.FreeSwap Exchange Protocol": {
-    "message": "FreeSwap Exchange Protocol",
+    "message": "FreeSwap 交易协议",
     "description": "The label for category FreeSwap Exchange Protocol in sidebar FeSwapSidebar"
   }
 }

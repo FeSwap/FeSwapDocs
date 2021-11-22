@@ -12,13 +12,13 @@ sidebar_label: 'Governance on BSC'
 _______________________
 
 
-Compared to Ethereum network, Binance Smart Chain (BSC) is cheaper in terms of gas fee, and faster in terms of transaction handling performance. For new Defi applications, it is extremely difficult to cold-start in Ethereumm now, and BSC becomes a better choice to experiment and prove some noval ideas.
+Compared to Ethereum network, Binance Smart Chain (BSC) is cheaper in terms of gas fee, and faster in terms of transaction handling. For new Defi applications, it is extremely difficult to cold-start in Ethereumm now, and BSC becomes a better choice to experiment and prove some noval ideas.
 
-FeSwap DAO has decided to deploy its commissionless DEX Dapp on BSC, considering it is EVM compliant, crypto asset aboundant and ecosytem mature.
+FeSwap DAO has decided to deploy its commission-free DEX Dapp on BSC, considering it is EVM compliant, crypto asset aboundant and ecosytem mature.
 
-- <p><b>FESW@B</b> will be minted to be used as the governance token on BSC. FESW@B has no relationship with the FESW token on Ethereum, which is distributed, locked, and cannot be moved off Ethereum.</p>
+- <p><b>FESW@B</b> will be minted to be used as the governance token on BSC. FESW@B has no correlation with the FESW token on Ethereum, which has been distributed, locked, and cannot be moved off Ethereum.</p>
 
-- Total supply of FESW@B token is <b>1 billion</b>, which is minted at the deployment momemt, and cannot be minted any more.  
+- Total supply of FESW@B token is <b>1 billion</b>, all are minted at the momemt of deployment, and cannot be minted any more.  
   - <span className="text_span">FESW@B Name:</span>           <b className="title">FeSwap DAO</b>
   - <span className="text_span">FESW@B Symbol:</span>         <b className="title">FESW@B</b>
   - <span className="text_span">FESW@B Total supply:</span>   <b className="title">1,000,000,000</b>

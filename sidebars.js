@@ -68,17 +68,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'FeSwap on Binance',
-      collapsed: true,
-      items: [
-        'Binance/governance',
-        'Binance/improvement',
-        'Binance/nft',
-        'Binance/contracts',
-      ],
-    },
-    {
-      type: 'category',
       label: 'FreeSwap Exchange Protocol',
       collapsed: true,
       items: [
@@ -91,6 +80,28 @@ module.exports = {
         'FreeSwap/conclusion',
         'FreeSwap/reference',
       ],
-    }   
+    },
+    {
+      type: 'category',
+      label: 'FeSwap on Binance',
+      collapsed: true,
+      items: [
+        'Binance/governance',
+        'Binance/improvement',
+        'Binance/nft',
+        'Binance/contracts',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'FeSwap on Ploygon',
+      collapsed: true,
+      items: [
+        'Ploygon/governance',
+        'Ploygon/improvement',
+        'Ploygon/nft',
+        'Ploygon/contracts',
+      ],
+    }
   ]
 };

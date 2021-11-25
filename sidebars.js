@@ -94,13 +94,13 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'FeSwap on Ploygon',
+      label: 'FeSwap on Polygon',
       collapsed: true,
       items: [
-        'Ploygon/governance',
-        'Ploygon/improvement',
-        'Ploygon/nft',
-        'Ploygon/contracts',
+        'Polygon/governance',
+        'Polygon/improvement',
+        'Polygon/nft',
+        'Polygon/contracts',
       ],
     },
     {

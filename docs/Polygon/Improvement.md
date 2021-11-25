@@ -1,17 +1,17 @@
 ---
 id: improvement
-title: FeSwap Improvements on Ploygon
+title: FeSwap Improvements on Polygon
 hide_title: true
-sidebar_label: 'Improvement on Ploygon'
+sidebar_label: 'Improvement on Polygon'
 ---
 
 <div  className="title">
-  <h1> FeSwap Improvements on Ploygon </h1>
+  <h1> FeSwap Improvements on Polygon </h1>
 </div>
 
 _______________________
 
-Some improvements have been made to the FeSwap protocol implementation deployed on Ploygon Network, which mainly include following 4 features： 
+Some improvements have been made to the FeSwap protocol implementation deployed on Polygon Network, which mainly include following 4 features： 
 
 + A `Patch` mechanism is designed, and applied to a few FeSwap core smart contracts.
   + Compared to the `Proxy` mechanism widely adopted in Defi ecosystem to upgrade deployed smart contracts, which always incur some additional gas fees to all transactions, `Patch` mechanism imposes no additional gas fee to the host smart contract execution.
@@ -24,10 +24,10 @@ Some improvements have been made to the FeSwap protocol implementation deployed 
 + Some optimization has been done for the core smart contract to be more gas fee effective.
   + A few smart contract variables changed to be immutable. 
   + A few lines of code adjusted to be more gas fee saving. <br/><br/>
-+ Some NFT bid settings are changed according to Ploygon network characteristics, mainly include:
++ Some NFT bid settings are changed according to Polygon network characteristics, mainly include:
   + The bid starting price of all the crypto asset liquidity pool NFTs is ZERO.
   + NFT bidding duration is shorten to be 3 days.
   + Liquidity pool is created at the same time while its corresponding NFT is claimed. 
   + NFT needs to be claimed within 4 days starting from the time when its bidding is finished, otherwise it will be open for new bidding.
   + FESW@M giveaway rates are changed accordingly.<br/>
-    *[** Learn more about NFT bidding on Ploygon](./nft)*<br/>
+    *[** Learn more about NFT bidding on Polygon](./nft)*<br/>

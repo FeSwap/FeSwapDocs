@@ -1,19 +1,19 @@
 ---
 id: governance
-title: FeSwap Governance on Ploygon
+title: FeSwap Governance on Polygon
 hide_title: true
-sidebar_label: 'Governance on Ploygon'
+sidebar_label: 'Governance on Polygon'
 ---
 
 <div  className="title">
-  <h1> Governance on Ploygon (MATIC) </h1>
+  <h1> Governance on Polygon (MATIC) </h1>
 </div>
 
 _______________________
 
-FeSwap has been deployed on Ethereum mainnet, but not been widely adopted for the sake of high gas fees and low available liquidities. So FeSwap DAO decides to deploy its commission-free DEX Dapp on Ploygon considering the lower transaction cost and higher transaction performance.
+FeSwap has been deployed on Ethereum mainnet, but not been widely adopted for the sake of high gas fees and low available liquidities. So FeSwap DAO decides to deploy its commission-free DEX Dapp on Polygon considering the lower transaction cost and higher transaction performance.
 
-- <p><b>FESW@M</b> will be minted to be used as the governance token on Ploygon. FESW@M has no correlation with FESW-like tokens on other Ethereum-compliant network, and just can be used as the governance token on Ploygon.</p>
+- <p><b>FESW@M</b> will be minted to be used as the governance token on Polygon. FESW@M has no correlation with FESW-like tokens on other Ethereum-compliant network, and just can be used as the governance token on Polygon.</p>
 
 - Total supply of FESW@M token is <b>1 billion</b>, all are minted at the momemt of deployment, and cannot be minted any more.  
   - <span className="text_span">FESW@M Name:</span>           <b className="title">FeSwap DAO</b>

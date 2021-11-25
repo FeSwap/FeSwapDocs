@@ -1,12 +1,12 @@
 ---
 id: nft
-title: NFT bidding on Ploygon
+title: NFT bidding on Polygon
 hide_title: true
 sidebar_label: 'NFT Bid Setting'
 ---
 
 <div  className="title">
-  <h1> NFT bidding on Ploygon </h1>
+  <h1> NFT bidding on Polygon </h1>
 </div>
 
 _______________________
@@ -17,7 +17,7 @@ trigerring internal asset exchange, to config the fraction of protocol profit in
 oracle utility. 
 
 To be an NFT owner of an asset-pair liquidity pool is extremly easy, just create it with ZERO bidding price. You need to pay nothing
-else than some miminal transaction gas fees on Ploygon. If the NFT is created or occupied by someone else, you could bid it with a litte bit
+else than some miminal transaction gas fees on Polygon. If the NFT is created or occupied by someone else, you could bid it with a litte bit
 higher price, which is 2% more than current price, or just 2 MATIC adding price if current price is less than 100 MATIC. Once there is no one else
 bidding this NFT within the bidding duration which is 3 days starting from it is first bidded, you will be the winner of this NFT.
 

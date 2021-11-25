@@ -51,7 +51,7 @@ $$
  x = (\sqrt{\gamma} -1 )* X \tag{3.2.2} 
  $$
 
-According to $(3.1.3)$ and $(3.1.6)$, after arbitrage the maximum $K$ value increasement of two sub-pools are:
+According to $(3.1.3)$ and $(3.1.6)$, after arbitrage the maximum $K$ value increment of two sub-pools are:
 
 $$\begin{aligned}
 \Delta K_A^M = \Delta K_B^M &= \frac{((X+x)*Y-X*(Y-y))^2}{4*(X+(X+x))*((Y-y)+Y)} \\[3mm]

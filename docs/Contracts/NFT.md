@@ -173,7 +173,7 @@ contract FeswaNFT is ERC721, Ownable {
             _transfer(preOwner, to, tokenID);
             pairInfo.currentPrice = msg.value;
 
-            // Repay the previous owner with 10% of the price increasement              
+            // Repay the previous owner with 10% of the price increment              
             TransferHelper.safeTransferETH(preOwner, repayAmount);
 
             // Airdrop to the next coming tenders

@@ -115,7 +115,7 @@ ____________________
 | BSC Network | On-Chain Staking Reward Factory Contract  |
 |:----------: | :-----------------------------: |
 | BSC Mainnet |  Available soon  |
-| BSC Testnet Ropsten  | [0x9B592DbCf45F8260657BC9Ac8BB3bCFE2C83d99C](https://testnet.bscscan.com/address/0x9B592DbCf45F8260657BC9Ac8BB3bCFE2C83d99C) |
+| BSC Testnet | [0x9B592DbCf45F8260657BC9Ac8BB3bCFE2C83d99C](https://testnet.bscscan.com/address/0x9B592DbCf45F8260657BC9Ac8BB3bCFE2C83d99C) |
 
 *** Github Code: *  [`Staking Reward Factory Contract`](https://github.com/FeSwap/Governance/blob/main/contracts/StakingTwinRewardsFactory.sol)
 
@@ -129,7 +129,7 @@ controlled by the manager of `Patch Factory`
 | BSC NetWork | On-Chain Patch Factory Contract  |
 |:----------: | :-----------------------------: |
 | BSC Mainnet |  Available soon  |
-| BSC Testnet Ropsten  | [0x6A8FE4753AB456e85E1379432d92ABF1fB49B5Df](https://testnet.bscscan.com/address/0x6A8FE4753AB456e85E1379432d92ABF1fB49B5Df) |
+| BSC Testnet | [0x6A8FE4753AB456e85E1379432d92ABF1fB49B5Df](https://testnet.bscscan.com/address/0x6A8FE4753AB456e85E1379432d92ABF1fB49B5Df) |
 
 *** Github Code: *  [`Patch Factory Contract`](https://github.com/FeSwap/Governance/blob/main/contracts/MetamorphicContractFactory.sol)
 

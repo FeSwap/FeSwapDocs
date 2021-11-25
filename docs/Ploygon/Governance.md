@@ -6,15 +6,14 @@ sidebar_label: 'Governance on Ploygon'
 ---
 
 <div  className="title">
-  <h1> FeSwap Governance on Ploygon </h1>
+  <h1> Governance on Ploygon (MATIC) </h1>
 </div>
 
 _______________________
 
+FeSwap has been deployed on Ethereum mainnet, but not been widely adopted for the sake of high gas fees and low available liquidities. So FeSwap DAO decides to deploy its commission-free DEX Dapp on Ploygon considering the lower transaction cost and higher transaction performance.
 
-Similar as Binance Smart Chain, Ploygon is also EVM-compliant, and gas fee effective in handling transactions. So FeSwap DAO has decided to deploy its commission-free DEX Dapp on Ploygon as well.
-
-- <p><b>FESW@M</b> will be minted to be used as the governance token on Ploygon. FESW@M has no correlation with FESW on Ethereum, and FESW@B on BSC, which can just be used as the governance token on Ploygon.</p>
+- <p><b>FESW@M</b> will be minted to be used as the governance token on Ploygon. FESW@M has no correlation with FESW-like tokens on other Ethereum-compliant network, and just can be used as the governance token on Ploygon.</p>
 
 - Total supply of FESW@M token is <b>1 billion</b>, all are minted at the momemt of deployment, and cannot be minted any more.  
   - <span className="text_span">FESW@M Name:</span>           <b className="title">FeSwap DAO</b>
@@ -31,7 +30,7 @@ Similar as Binance Smart Chain, Ploygon is also EVM-compliant, and gas fee effec
 |:--------------------:|:------------:|:----------------------------------------------------------:|
 | Liquidity Providers  |  50%         | Liquidity mining of main crypto asset exchange pools       |
 | NFT Creaters         |  3%          | First 10,000 NFT creators of the asset exchange pools      |
-| NFT Bidders          |  18%         | NFT bidders of the exchange pool NFTs                      |
+| NFT Bidders          |  17%         | NFT bidders of the exchange pool NFTs                      |
 
 </div>
 
@@ -43,6 +42,6 @@ Similar as Binance Smart Chain, Ploygon is also EVM-compliant, and gas fee effec
 |:-------------------------------:|:-------------:|:---------------------------------:|
 | Current Contributers            |  3%           | Encourage contributors            |
 | Future Development Team         |  12%          | Drive future developing           |
-| FeSwap DAO Treasury Fund        |  15%          | Fund FeSwap DAO growth on BSC     |
+| FeSwap DAO Treasury Fund        |  15%          | Fund FeSwap DAO growth on Heco     |
 
 </div>

@@ -34,10 +34,10 @@ Detailded NFT bidding rules are as following:
 |:-----------:|:--------|:----------|
 |  1 | The first NFT bidder of any crypto asset liquidity pool receives 1000 FESW@B as the giveaway if the bidding prics is 0. Only the heading 50000 first NFT bidders are qualified for this giveaway. If the bidding price is not ZERO, additional giveaway amount is the product of the bidding price and the rate of 10000 FESW@B/BNB.   |  Giveaway = 1000 + 10000 * Price  |
 |  2 | Giveaway amount to any following NFT bidder is the product of the bidding price increment and the rate of 10000 FESW@B/BNB.   |   Giveaway = 10000 * Price increment   |
-|  3 | The bidding price increment should be more than 2% over current NFT price, or more than 0.02BNB if current price is less than 1 BNB. | ↑ Price >= max of (0.02BNB, 2% * price)   |
+|  3 | The bidding price increment should be more than 2% over current NFT price, or more than 0.02BNB if current price is less than 1 BNB. | δP >= max (0.02BNB, 2% * price)   |
 |  4 | Normal bidding duration is 3 days staring from the firts bidding time (t<sub>0</sub>).      |   t<sub>e</sub> = t<sub>0</sub> + 3 days   |
 |  5 |  Bidding is extended if anyone bids the NFT within 2 hours before the normal ending time. Extension duration is 2 hours starting from the last bidding time.      |  t'<sub>e</sub> = t + 2 hours, if t >= t<sub>e</sub> - 2 hours    |
-|  6 |  The bidding is ended if the normal bidding time passed, and no new bidding coming in during last 2 hours. The last NFT bidder is the final bidding winner.  |      |
+|  6 |  The bidding is ended if the normal bidding time passed, and no new bidding comes in during last 2 hours. The last NFT bidder is the final bidding winner.  |      |
 |  7 |  The NFT winner need to claim the NFT within 4 days starting from the time the bidding has ended, otherwise the NFT will be open for re-bidding, but the current winner will only be refunded half of the final bidding price.      |      |
 |  8 |  The giveaway amount to the NFT bidding winner is the product of the last bidding price and the rate of 50000 FESW@B/BNB.            |  Winner giveaway = 50000 * Price  |
 

@@ -83,17 +83,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'FeSwap on Binance',
-      collapsed: true,
-      items: [
-        'Binance/governance',
-        'Binance/improvement',
-        'Binance/nft',
-        'Binance/contracts',
-      ],
-    },
-    {
-      type: 'category',
       label: 'FeSwap on Polygon',
       collapsed: true,
       items: [
@@ -105,58 +94,76 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'FeSwap on Avalanche',
+      label: 'Coming FeSwap Networks',
       collapsed: true,
       items: [
-        'Avalanche/governance',
-        'Avalanche/improvement',
-        'Avalanche/nft',
-        'Avalanche/contracts',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'FeSwap on Fantom',
-      collapsed: true,
-      items: [
-        'Fantom/governance',
-        'Fantom/improvement',
-        'Fantom/nft',
-        'Fantom/contracts',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'FeSwap on Harmony',
-      collapsed: true,
-      items: [
-        'Harmony/governance',
-        'Harmony/improvement',
-        'Harmony/nft',
-        'Harmony/contracts',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'FeSwap on Heco',
-      collapsed: true,
-      items: [
-        'Heco/governance',
-        'Heco/improvement',
-        'Heco/nft',
-        'Heco/contracts',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'FeSwap on Arbitrum',
-      collapsed: true,
-      items: [
-        'Arbitrum/governance',
-        'Arbitrum/improvement',
-        'Arbitrum/nft',
-        'Arbitrum/contracts',
-      ],
-    },
+        {
+          type: 'category',
+          label: 'FeSwap on Binance',
+          collapsed: true,
+          items: [
+            'Binance/governance',
+            'Binance/improvement',
+            'Binance/nft',
+            'Binance/contracts',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'FeSwap on Avalanche',
+          collapsed: true,
+          items: [
+            'Avalanche/governance',
+            'Avalanche/improvement',
+            'Avalanche/nft',
+            'Avalanche/contracts',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'FeSwap on Fantom',
+          collapsed: true,
+          items: [
+            'Fantom/governance',
+            'Fantom/improvement',
+            'Fantom/nft',
+            'Fantom/contracts',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'FeSwap on Harmony',
+          collapsed: true,
+          items: [
+            'Harmony/governance',
+            'Harmony/improvement',
+            'Harmony/nft',
+            'Harmony/contracts',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'FeSwap on Heco',
+          collapsed: true,
+          items: [
+            'Heco/governance',
+            'Heco/improvement',
+            'Heco/nft',
+            'Heco/contracts',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'FeSwap on Arbitrum',
+          collapsed: true,
+          items: [
+            'Arbitrum/governance',
+            'Arbitrum/improvement',
+            'Arbitrum/nft',
+            'Arbitrum/contracts',
+          ],
+        },
+      ]
+    }  
   ]
 };

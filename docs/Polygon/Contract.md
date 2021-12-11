@@ -39,7 +39,7 @@ oracle on-off swicth.
 | Polygon Network | On-Chain Liquidity Pool Factory Contract |
 |:----------: | :-------------------------------------: |
 | Polygon Mainnet | [0x91289e8150E20Ff7CA8478dAd6DCC55D5c85Ac2D](https://polygonscan.com/address/0x91289e8150E20Ff7CA8478dAd6DCC55D5c85Ac2D) |
-| Polygon Testnet | [0x69752367a0720963Aec78760EeAa208aFcF09122](https://mumbai.polygonscan.com/address/0x69752367a0720963Aec78760EeAa208aFcF09122) |
+| Polygon Testnet | [0xD21E281493C0c63f6C0B7929D83Aa5E87a83B881](https://mumbai.polygonscan.com/address/0xD21E281493C0c63f6C0B7929D83Aa5E87a83B881) |
 
 *** Github Code: *  [`Liquidity Pool Factory Contract`](https://github.com/FeSwap/FeSwapCore/blob/master/contracts/FeSwapFactory.sol) 
 
@@ -53,7 +53,7 @@ liquidity-adding, liquidity-removing and token-swapping.
 | Polygon Network | Contract Address |
 |:------: | :--------------: |
 | Polygon Mainnet | [0x938B544Ce2AE40B6dE0Ab728a69c37A60159689A](https://polygonscan.com/address/0x938b544ce2ae40b6de0ab728a69c37a60159689a)   |
-| Polygon Testnet | [0x364cD4f1202a48e9e6C6De502B2dde572Ef57281](https://mumbai.polygonscan.com/address/0x364cD4f1202a48e9e6C6De502B2dde572Ef57281) |
+| Polygon Testnet | [0x75bCDf4e9900Fac6D8E601624435d9269bAD9051](https://mumbai.polygonscan.com/address/0x75bCDf4e9900Fac6D8E601624435d9269bAD9051) |
 
 *** Github Code: *  [`Exchange Router Contract`](https://github.com/FeSwap/FeSwapCore/blob/master/contracts/FeSwapRouter.sol) 
 
@@ -69,7 +69,7 @@ The NFT owner may earn 60% of the protocol profit of the underlying crypto asset
 | Polygon Network | On-Chain Asset Pair NFT Contract  |
 |:----------: | :-------------------------------: |
 | Polygon Mainnet | [0xA2f089377f4Dddf971ba65a69Fb4DFDD5fAf16Bb](https://polygonscan.com/address/0xa2f089377f4dddf971ba65a69fb4dfdd5faf16bb) |
-| Polygon Testnet | [0x928d6F271F4CdEa1A544F40898350d1Ba55018D4](https://mumbai.polygonscan.com/address/0x928d6F271F4CdEa1A544F40898350d1Ba55018D4) |
+| Polygon Testnet | [0xf6475c3143574F4d84c627fea3df81036ceeDAC4](https://mumbai.polygonscan.com/address/0xf6475c3143574F4d84c627fea3df81036ceeDAC4) |
 
 *** Github Code: *  [`Asset Pair NFT Contract`](https://github.com/FeSwap/Governance/blob/main/contracts/FeswaNFT.sol)
 

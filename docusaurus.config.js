@@ -4,7 +4,7 @@ const path = require("path");
 const katex = require("rehype-katex");
 
 module.exports = {
-  title: 'FeSwap is Alive',
+  title: 'FeSwap is live on Polygon',
   tagline: '🤲💰️ Decentralized Crypto AMM Exchange with Zero Commision Fee 💰️🤲',
   url: 'https://wwww.feswap.io',
   baseUrl: '/',
@@ -41,14 +41,22 @@ module.exports = {
         src: 'img/Fesw.png',
       },
       items: [
-        {to: 'Swap',        label: 'Swap',        position: 'left'},
-        {to: 'Liquidity',   label: 'Liquidity',   position: 'left'},
-        {to: 'Mining',      label: 'Mining',      position: 'left'},
-        {to: 'NFT',         label: 'NFT',         position: 'left'},
-        {to: 'Sponsor',     label: 'Sponsor',     position: 'left'},
+        {label: 'On Polygon',  to: 'docs/Polygon/governance', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'Tutorial',
+          position: 'left',
+          items: [
+            {to: 'Swap',        label: 'Swap'},
+            {to: 'Liquidity',   label: 'Liquidity'},
+            {to: 'Mining',      label: 'Mining'},
+            {to: 'NFT',         label: 'NFT'},
+            {to: 'Sponsor',     label: 'Sponsor'},
+          ],
+        },
 
-        {label: 'App',      href: 'https://app.feswap.io', position: 'right'},
-        {label: '@ipfs',    href: 'https://ipfs.feswap.io', position: 'right'},
+        {label: 'App',      href: 'https://app.feswap.io', position: 'left'},
+        {label: '@ipfs',    href: 'https://ipfs.feswap.io', position: 'left'},
         {
           to: 'docs/',
           activeBasePath: '/',

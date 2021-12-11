@@ -2,9 +2,11 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import ShowWindow from '@site/src/components/ShowWindow';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import { LinkButton } from '@site/src/components/BrowserWindow';
 
 const features = [
   {
@@ -119,6 +121,24 @@ export default function Home() {
         </div>
       </header>
       <main>
+        <div className="container">
+          <ShowWindow title="FeSwap is Live on Polygon">
+            <div>
+              <p className={styles.showtext}>💰️ All token pair NFTs are freely minted </p>
+              <p className={styles.showtext}>💰️ Each minter of each token pair NFT gets 3000 FESW@M freely</p>
+              <p className={styles.showtext}>💰️ Owner of each token pair NFT shares 60% of the respective protocol profit</p>
+              <p className={styles.showtext}>💰️ Five liquidity pools are open for yield farming</p>
+              <p className={styles.showtext}>💰️ 20% of the governance token air airdropped to NFT bidders </p>
+              <p className={styles.showtext}>💰️ 50% of the governance token air airdropped to Liquidity providers </p>
+              <LinkButton url="https://app.feswap.io/#/nft" link="Bid the token pair NFT ↗" />
+            </div>
+          </ShowWindow>
+        </div>
+
+        <div className="container">
+          <div className={styles.separator}> </div>
+        </div>
+
         {features && features.length > 0 && (
           <section className={styles.section}>
             <div className="container" >

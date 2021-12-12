@@ -42,6 +42,6 @@ FeSwap has been deployed on Ethereum mainnet, but not been widely adopted for th
 |:-------------------------------:|:-------------:|:---------------------------------:|
 | Current Contributers            |  3%           | Encourage contributors            |
 | Future Development Team         |  12%          | Drive future developing           |
-| FeSwap DAO Treasury Fund        |  15%          | Fund FeSwap DAO growth on Heco     |
+| FeSwap DAO Treasury Fund        |  15%          | Fund FeSwap DAO growth on Polygon     |
 
 </div>

@@ -102,7 +102,7 @@ module.exports = {
           items: [
             {
               label: 'Telegram',
-              href: 'https://t.me/FeSwap',
+              href: 'https://t.me/FeSwap66',
             },
             {
               label: 'Twitter',
